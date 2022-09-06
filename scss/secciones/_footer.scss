@@ -1,0 +1,53 @@
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "contacto redes-cont copyright";
+    align-items: center;
+    grid-area: footer;
+    background-color: $colorLogo;
+
+    .contacto {
+        grid-area: contacto;
+        @include fontStyle ($colorFondo, start)
+    }
+
+    .redes-cont {
+        grid-area: redes-cont;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+
+        img {
+            width: 70px;
+            padding: 5px;
+
+            &:hover {
+                transform: translateY(2px);
+            }
+        }
+    }
+
+    .copyright {
+        grid-area: copyright;
+        color: #dfdfcecc;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 724px) {
+    .footer {
+        .copyright {
+            display: none;
+        }
+
+        .contacto {
+            display: none;
+        }
+    }
+    
+}

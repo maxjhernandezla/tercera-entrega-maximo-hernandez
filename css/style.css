@@ -1,0 +1,136 @@
+main .propiedades-destacadas .card, main .venta-arr-main .casas-container .card {
+  background-color: bisque;
+  box-shadow: 10px 5px rgba(63, 58, 58, 0.525);
+  border: 1px black solid; }
+
+header .navbar-expand-lg {
+  justify-content: flex-end;
+  z-index: 2; }
+
+header .navbar-collapse {
+  justify-content: flex-end;
+  z-index: 2; }
+
+header .nav-color {
+  background-color: #193724; }
+
+header .navbar .container-fluid .navbar-brand .logo-img {
+  width: 150px;
+  padding: 0; }
+  header .navbar .container-fluid .navbar-brand .logo-img:hover {
+    border: 1px rgba(0, 0, 0, 0.578) solid;
+    border-radius: 5%;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.584); }
+
+header .navbar .container-fluid .navbar-brand .navbar-toggler {
+  z-index: 2; }
+
+header .navbar .container-fluid .navbar-brand .navbar-brand {
+  z-index: 2; }
+
+header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item:hover {
+  color: black;
+  border: 1px rgba(0, 0, 0, 0.578) solid;
+  border-radius: 5%;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.584); }
+
+header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #dfdfcecc;
+  z-index: 2; }
+  header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    font-weight: bolder; }
+
+main h1 {
+  display: none; }
+
+main .carousel .carousel-inner .carousel-item .w-100 {
+  max-height: 70vh; }
+
+main .form-container {
+  display: flex;
+  padding: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #dfdfcecc; }
+  main .form-container .form-select {
+    width: 45%;
+    margin: 5px; }
+    main .form-container .form-select:hover {
+      background-color: bisque; }
+  main .form-container .form-price {
+    width: 91.6%;
+    margin: 10px; }
+  main .form-container .d-grid .button-search {
+    margin-top: 13px; }
+    main .form-container .d-grid .button-search:hover {
+      box-shadow: 2px 2px rgba(0, 0, 0, 0.454); }
+  main .form-container .d-grid .btn-primary {
+    background-color: #193724;
+    border-color: rgba(0, 0, 0, 0.689);
+    font-weight: bold; }
+    main .form-container .d-grid .btn-primary:hover {
+      background-color: #193724b8; }
+    main .form-container .d-grid .btn-primary:focus {
+      background-color: #dfdfcecc;
+      color: black;
+      border: 2px black solid;
+      font-weight: bolder;
+      font-size: large; }
+
+main h2 {
+  background-color: #193724;
+  padding: 10px;
+  margin: 0;
+  color: white;
+  text-align: center; }
+
+main .propiedades-destacadas {
+  display: flex;
+  justify-content: space-between;
+  background-color: #dfdfcecc; }
+  main .propiedades-destacadas .card {
+    margin: 15px; }
+
+@media (max-width: 800px) {
+  .propiedades-destacadas {
+    flex-wrap: wrap;
+    justify-content: center; } }
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "contacto redes-cont copyright";
+  align-items: center;
+  grid-area: footer;
+  background-color: #193724; }
+  .footer .contacto {
+    grid-area: contacto;
+    background-color: #193724;
+    padding: 10px;
+    margin: 0;
+    color: #dfdfcecc;
+    text-align: start; }
+  .footer .redes-cont {
+    grid-area: redes-cont;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px; }
+    .footer .redes-cont img {
+      width: 70px;
+      padding: 5px; }
+      .footer .redes-cont img:hover {
+        transform: translateY(2px); }
+  .footer .copyright {
+    grid-area: copyright;
+    color: #dfdfcecc;
+    font-size: 20px; }
+
+@media (max-width: 724px) {
+  .footer .copyright {
+    display: none; }
+  .footer .contacto {
+    display: none; } }

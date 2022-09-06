@@ -1,0 +1,9 @@
+main {
+    .venta-arr-main {
+        .casas-container {
+            .card {
+                @extend %estiloCard;
+            }
+        }
+    }
+}

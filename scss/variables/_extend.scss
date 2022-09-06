@@ -1,0 +1,13 @@
+%estiloCard {
+    background-color: $colorHover;
+    box-shadow: 10px 5px rgba(63, 58, 58, 0.525);
+    border: 1px black solid;  
+}
+
+@mixin fontStyle ($colorTitle, $alignText) {
+    background-color: $colorLogo;
+    padding: 10px;
+    margin: 0;
+    color: $colorTitle;
+    text-align: $alignText;
+}
