@@ -9,6 +9,30 @@ main .propiedades-destacadas .card, main .venta-arr-main .casas-container .card 
     -webkit-box-shadow: -1px 2px 32px -6px rgba(0, 0, 0, 0.77);
     -moz-box-shadow: -1px 2px 32px -6px rgba(0, 0, 0, 0.77); }
 
+.contacto-main .contacto-title {
+  padding: 15px;
+  text-align: start;
+  background-image: url("https://res.cloudinary.com/maxjhernandez/image/upload/v1662510756/Las%20Mar%C3%ADas/nagesh-badu-vYcH7pI6v1Q-unsplash_g76lda.jpg");
+  /* The image used */
+  height: 250px;
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  display: flex;
+  align-items: center; }
+
+.contacto-main .contacto-title h1 {
+  display: flex;
+  background-color: rgba(118, 107, 107, 0.646);
+  padding: 15px 25px 15px 25px;
+  margin: 0;
+  color: #dfdfcecc; }
+
 header .navbar-expand-lg {
   justify-content: flex-end;
   z-index: 2; }
@@ -170,3 +194,44 @@ main .propiedades-destacadas {
     display: none; }
   .footer .contacto {
     display: none; } }
+
+.contacto-main {
+  background-color: #dfdfcecc; }
+  .contacto-main .contacto-title {
+    height: 250px; }
+  .contacto-main .contacto-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .contacto-main .contacto-info .iframe-container {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin: 15px; }
+    .contacto-main .contacto-info .contacto-data {
+      padding: 15px; }
+  .contacto-main .envie-consulta {
+    border-top: 1px #193724 solid;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contacto-main .envie-consulta .form-consulta {
+      display: flex;
+      flex-direction: column; }
+      .contacto-main .envie-consulta .form-consulta textarea {
+        margin-top: 5px;
+        margin-bottom: 5px; }
+        .contacto-main .envie-consulta .form-consulta textarea:hover {
+          background-color: bisque; }
+          .contacto-main .envie-consulta .form-consulta textarea:hover .form-control {
+            width: 450px; }
+      .contacto-main .envie-consulta .form-consulta p {
+        padding: 5px;
+        margin-bottom: 0; }
+      .contacto-main .envie-consulta .form-consulta input {
+        padding: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px; }
+        .contacto-main .envie-consulta .form-consulta input:hover {
+          background-color: bisque; }

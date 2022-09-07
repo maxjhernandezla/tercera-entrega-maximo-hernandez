@@ -1,0 +1,58 @@
+.contacto-main {
+    background-color: $colorFondo;
+    .contacto-title {
+        height: 250px;
+        @extend %estiloImagenTitulos;
+        h1 {
+            @extend %estiloTitulos;
+        }
+    }
+    .contacto-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .iframe-container {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 15px;
+          }
+        .contacto-data {
+            padding: 15px;
+        }
+    }
+    .envie-consulta {
+        border-top: 1px #193724 solid;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .form-consulta {
+            display: flex;
+            flex-direction: column;
+            textarea {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                &:hover {
+                    background-color: bisque;
+                .form-control {
+                        width: 450px;
+                }
+                }
+            }
+            p {
+                padding: 5px;
+                margin-bottom: 0;
+            }
+            input {
+                padding: 5px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                &:hover {
+                    background-color: bisque;
+                }
+            }
+          }
+      }
+  }
