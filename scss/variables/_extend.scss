@@ -39,3 +39,9 @@
     margin: 0;
     color: $colorFondo;
 }
+
+%estiloTitulosFooter {
+    padding: 20px;
+    border-bottom: 2px $colorHover solid ;
+    color: $colorHover;
+}

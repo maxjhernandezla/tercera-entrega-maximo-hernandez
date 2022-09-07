@@ -5,25 +5,57 @@
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas: "contacto redes-cont copyright";
-    align-items: center;
+
     grid-area: footer;
     background-color: $colorLogo;
 
+
     .contacto {
         grid-area: contacto;
+        font-size: 70%;
+        display: flex;
+        flex-direction: column;
         @include fontStyle ($colorFondo, start)
+            h4 {
+                @extend %estiloTitulosFooter;
+            }
+            ul {
+                list-style: none;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: fit-content;
+                li {
+                    display: flex;
+                    align-items: center;
+                    margin: 10px 0px 10px 0px;
+                    img {
+                        height: 20px;
+                        margin-right: 5px;                    }
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
     }
 
     .redes-cont {
         grid-area: redes-cont;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        font-size: 70%;
+        padding: 10px;
+        h4 {
+            @extend %estiloTitulosFooter;
+        }
+       
 
         img {
-            width: 70px;
+            width: 40px;
+            margin-top: 20px;
             padding: 5px;
 
             &:hover {
