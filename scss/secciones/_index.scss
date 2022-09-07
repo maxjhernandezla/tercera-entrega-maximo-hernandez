@@ -62,18 +62,59 @@ main {
     }
 
     h2 {
-        @include fontStyle (white, center);
+        @include fontStyle (black, start);
+        background-color: aliceblue;
     }
     .propiedades-destacadas {
         display: flex;
         justify-content: space-between;
-        background-color: $colorFondo;
+        background-color: aliceblue;
         .card {
             margin: 15px;
-            @extend %estiloCard; 
+            margin-bottom: 30px;            
+            @extend %estiloCard;
+            &:hover {
+                transform: translateY(2px);
+            }
+            .img-container {
+                position: relative;
+                p {
+                    position: absolute;
+                    background-color: rgba(0, 0, 0, 0.363);
+                    color: $colorFondo;
+                    margin: 0;
+                    top: 81%;
+                    padding: 0.5rem;
+                    font-size: 1.5rem;
+                }
+                }
+            }
+            .card-icon{
+                display: flex;
+                flex-direction: row;
+                .card-utilities {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: center;
+                }
+            }  
+                .card-body {
+                    a {
+                        text-decoration: none;
+                        color: $colorTexto;
+                        }
+                    .icon {
+                    width: 25px;
+                    margin: 10px;
+                    }
+                    p {
+                    margin: 0;
+                    }
+                
+            }
         }
     }
-}
 
 @media (max-width: 800px) {
     .propiedades-destacadas {

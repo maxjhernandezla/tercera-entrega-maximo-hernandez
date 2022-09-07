@@ -1,7 +1,13 @@
 main .propiedades-destacadas .card, main .venta-arr-main .casas-container .card {
-  background-color: bisque;
-  box-shadow: 10px 5px rgba(63, 58, 58, 0.525);
-  border: 1px black solid; }
+  background-color: #ffe4c4;
+  box-shadow: -1px 2px 27px -6px rgba(0, 0, 0, 0.77);
+  -webkit-box-shadow: -1px 2px 27px -6px rgba(0, 0, 0, 0.77);
+  -moz-box-shadow: -1px 2px 27px -6px rgba(0, 0, 0, 0.77);
+  background-color: #dfdfcecc; }
+  main .propiedades-destacadas .card:hover, main .venta-arr-main .casas-container .card:hover {
+    box-shadow: -1px 2px 32px -6px rgba(0, 0, 0, 0.77);
+    -webkit-box-shadow: -1px 2px 32px -6px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow: -1px 2px 32px -6px rgba(0, 0, 0, 0.77); }
 
 header .navbar-expand-lg {
   justify-content: flex-end;
@@ -56,7 +62,7 @@ main .form-container {
     width: 45%;
     margin: 5px; }
     main .form-container .form-select:hover {
-      background-color: bisque; }
+      background-color: #ffe4c4; }
   main .form-container .form-price {
     width: 91.6%;
     margin: 10px; }
@@ -81,15 +87,45 @@ main h2 {
   background-color: #193724;
   padding: 10px;
   margin: 0;
-  color: white;
-  text-align: center; }
+  color: black;
+  text-align: start;
+  background-color: aliceblue; }
 
 main .propiedades-destacadas {
   display: flex;
   justify-content: space-between;
-  background-color: #dfdfcecc; }
+  background-color: aliceblue; }
   main .propiedades-destacadas .card {
-    margin: 15px; }
+    margin: 15px;
+    margin-bottom: 30px; }
+    main .propiedades-destacadas .card:hover {
+      transform: translateY(2px); }
+    main .propiedades-destacadas .card .img-container {
+      position: relative; }
+      main .propiedades-destacadas .card .img-container p {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.363);
+        color: #dfdfcecc;
+        margin: 0;
+        top: 81%;
+        padding: 0.5rem;
+        font-size: 1.5rem; }
+  main .propiedades-destacadas .card-icon {
+    display: flex;
+    flex-direction: row; }
+    main .propiedades-destacadas .card-icon .card-utilities {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center; }
+  main .propiedades-destacadas .card-body a {
+    text-decoration: none;
+    color: #495057; }
+  main .propiedades-destacadas .card-body .icon {
+    width: 25px;
+    margin: 10px; }
+  main .propiedades-destacadas .card-body p {
+    margin: 0; }
 
 @media (max-width: 800px) {
   .propiedades-destacadas {
