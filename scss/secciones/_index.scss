@@ -42,21 +42,7 @@ main {
                     }
                 }
                 .btn-primary {
-                    background-color: $colorLogo;
-                    border-color: rgba(0, 0, 0, 0.689);
-                    font-weight: bold;
-
-                    &:hover {
-                        background-color: #193724b8;
-                    }
-
-                    &:focus {
-                        background-color: $colorFondo;
-                        color: black;
-                        border: 2px black solid;
-                        font-weight: bolder;
-                        font-size: large;
-                    }
+                    @extend %estiloBoton;
                 }
         }
     }

@@ -1,18 +1,18 @@
 * {
   box-sizing: border-box; }
 
-main .propiedades-destacadas .card, main .venta-arr-main .casas-container .card {
+main .propiedades-destacadas .card, main .venta-arr-main .casas-container .card, .quienes-main .quienes-container .quienes-somos-section img {
   background-color: #ffe4c4;
   box-shadow: -1px 2px 27px -6px rgba(0, 0, 0, 0.77);
   -webkit-box-shadow: -1px 2px 27px -6px rgba(0, 0, 0, 0.77);
   -moz-box-shadow: -1px 2px 27px -6px rgba(0, 0, 0, 0.77);
   background-color: #dfdfcecc; }
-  main .propiedades-destacadas .card:hover, main .venta-arr-main .casas-container .card:hover {
+  main .propiedades-destacadas .card:hover, main .venta-arr-main .casas-container .card:hover, .quienes-main .quienes-container .quienes-somos-section img:hover {
     box-shadow: -1px 2px 32px -6px rgba(0, 0, 0, 0.77);
     -webkit-box-shadow: -1px 2px 32px -6px rgba(0, 0, 0, 0.77);
     -moz-box-shadow: -1px 2px 32px -6px rgba(0, 0, 0, 0.77); }
 
-.contacto-main .contacto-title {
+.contacto-main .contacto-title, .quienes-main .quienes-title {
   padding: 15px;
   text-align: start;
   background-image: url("https://res.cloudinary.com/maxjhernandez/image/upload/v1662510756/Las%20Mar%C3%ADas/nagesh-badu-vYcH7pI6v1Q-unsplash_g76lda.jpg");
@@ -29,17 +29,41 @@ main .propiedades-destacadas .card, main .venta-arr-main .casas-container .card 
   display: flex;
   align-items: center; }
 
-.contacto-main .contacto-title h1 {
+.contacto-main .contacto-title h1, .quienes-main .quienes-title h1 {
   display: flex;
-  background-color: rgba(118, 107, 107, 0.646);
+  background-color: #766b6ba5;
   padding: 15px 25px 15px 25px;
   margin: 0;
   color: #dfdfcecc; }
 
-.footer .contacto h4, .footer .redes-cont h4 {
+.footer .contacto h4, .footer .redes-cont h4, .footer .servicios-footer h4 {
   padding: 20px;
   border-bottom: 2px #ffe4c4 solid;
-  color: #ffe4c4; }
+  color: #ffe4c4;
+  width: fit-content; }
+
+.quienes-main .quienes-container .form-container-todos {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  padding: 10px;
+  gap: 10px;
+  align-content: center;
+  justify-content: center; }
+
+main .form-container .d-grid .btn-primary, .quienes-main .quienes-container .form-container-todos .button-search {
+  background-color: #193724;
+  border-color: rgba(0, 0, 0, 0.689);
+  font-weight: bold; }
+  main .form-container .d-grid .btn-primary:hover, .quienes-main .quienes-container .form-container-todos .button-search:hover {
+    background-color: #193724b8; }
+  main .form-container .d-grid .btn-primary:focus, .quienes-main .quienes-container .form-container-todos .button-search:focus {
+    background-color: #dfdfcecc;
+    color: black;
+    border: 2px black solid;
+    font-weight: bolder;
+    font-size: large; }
 
 header .navbar-expand-lg {
   justify-content: flex-end;
@@ -102,18 +126,6 @@ main .form-container {
     margin-top: 13px; }
     main .form-container .d-grid .button-search:hover {
       box-shadow: 2px 2px rgba(0, 0, 0, 0.454); }
-  main .form-container .d-grid .btn-primary {
-    background-color: #193724;
-    border-color: rgba(0, 0, 0, 0.689);
-    font-weight: bold; }
-    main .form-container .d-grid .btn-primary:hover {
-      background-color: #193724b8; }
-    main .form-container .d-grid .btn-primary:focus {
-      background-color: #dfdfcecc;
-      color: black;
-      border: 2px black solid;
-      font-weight: bolder;
-      font-size: large; }
 
 main h2 {
   background-color: #193724;
@@ -166,7 +178,7 @@ main .propiedades-destacadas {
 
 .footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas: "contacto redes-cont copyright";
@@ -202,7 +214,7 @@ main .propiedades-destacadas {
     grid-area: redes-cont;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
     font-size: 70%;
     padding: 10px; }
@@ -212,6 +224,28 @@ main .propiedades-destacadas {
       padding: 5px; }
       .footer .redes-cont img:hover {
         transform: translateY(2px); }
+  .footer .servicios-footer {
+    font-size: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px; }
+    .footer .servicios-footer ul {
+      list-style: none;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: fit-content; }
+      .footer .servicios-footer ul li {
+        margin: 5px;
+        width: fit-content; }
+        .footer .servicios-footer ul li:hover {
+          transform: translateY(2px); }
+      .footer .servicios-footer ul a {
+        text-decoration: none;
+        color: #dfdfcecc; }
+        .footer .servicios-footer ul a:hover {
+          color: #ffe4c4; }
   .footer .copyright {
     grid-area: copyright;
     color: #dfdfcecc;
@@ -263,3 +297,49 @@ main .propiedades-destacadas {
         margin-bottom: 5px; }
         .contacto-main .envie-consulta .form-consulta input:hover {
           background-color: bisque; }
+
+.quienes-main {
+  background-color: #dfdfcecc; }
+  .quienes-main .quienes-title {
+    height: 250px; }
+    .quienes-main .quienes-title h1 {
+      background-color: #766b6ba5; }
+  .quienes-main .quienes-container {
+    margin: 0;
+    display: flex;
+    flex-direction: row; }
+    .quienes-main .quienes-container .quienes-somos-section {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 70vw; }
+      .quienes-main .quienes-container .quienes-somos-section img {
+        width: 450px;
+        align-self: center;
+        margin: 25px; }
+      .quienes-main .quienes-container .quienes-somos-section p {
+        margin: 15px; }
+
+@media (max-width: 750px) {
+  .quienes-main .quienes-container {
+    display: block; }
+    .quienes-main .quienes-container .quienes-somos-section {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: auto; }
+    .quienes-main .quienes-container .form-container-todos {
+      width: 100%; }
+      .quienes-main .quienes-container .form-container-todos select {
+        width: 98%; } }
+
+@media (max-width: 500px) {
+  .quienes-main .quienes-container .quienes-somos-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto; }
+    .quienes-main .quienes-container .quienes-somos-section img {
+      width: 310px;
+      align-self: center;
+      padding: 0px; } }

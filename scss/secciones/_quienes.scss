@@ -1,0 +1,75 @@
+.quienes-main {
+    background-color: $colorFondo;
+    .quienes-title {
+        height: 250px;
+        @extend %estiloImagenTitulos;
+        h1 {
+            @extend %estiloTitulos;
+            background-color: #766b6ba5;
+        }
+    }
+
+    .quienes-container {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        .quienes-somos-section {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 70vw;
+            img {
+                width: 450px;
+                align-self: center;
+                margin: 25px;
+                @extend %estiloCard;
+              }
+            p {
+                margin: 15px;
+            }
+          }
+        .form-container-todos {
+            @extend %estiloFormulario;
+            .button-search {
+                @extend %estiloBoton;
+            }
+        }  
+    }
+}
+
+@media (max-width: 750px){
+    .quienes-main {
+        .quienes-container {
+            display: block;
+            .quienes-somos-section {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: auto;
+            }
+            .form-container-todos {
+                width: 100%;
+                select {
+                    width: 98%;
+                  }
+              }
+        }
+    }
+}
+@media (max-width: 500px) {
+.quienes-main{    
+    .quienes-container {
+        .quienes-somos-section {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: auto;
+            img {
+                width: 310px;
+                align-self: center;
+                padding: 0px;
+            }
+        }
+        }
+    }   
+}

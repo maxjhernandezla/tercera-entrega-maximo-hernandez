@@ -34,7 +34,7 @@
 
 %estiloTitulos {
     display: flex;
-    background-color: rgba(118, 107, 107, 0.646);
+    background-color: #766b6ba5;
     padding: 15px 25px 15px 25px;
     margin: 0;
     color: $colorFondo;
@@ -44,4 +44,34 @@
     padding: 20px;
     border-bottom: 2px $colorHover solid ;
     color: $colorHover;
+    width: fit-content;
+}
+
+%estiloFormulario {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    padding: 10px;
+    gap: 10px;
+    align-content: center;
+    justify-content: center;
+}
+
+%estiloBoton {
+    background-color: $colorLogo;
+                    border-color: rgba(0, 0, 0, 0.689);
+                    font-weight: bold;
+
+                    &:hover {
+                        background-color: #193724b8;
+                    }
+
+                    &:focus {
+                        background-color: $colorFondo;
+                        color: black;
+                        border: 2px black solid;
+                        font-weight: bolder;
+                        font-size: large;
+                    }
 }
