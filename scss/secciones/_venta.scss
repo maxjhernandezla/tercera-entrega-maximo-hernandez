@@ -1,8 +1,28 @@
 main {
+    .venta-arr-title {
+        height: 250px;
+        display: flex;
+        justify-content: space-between;
+        @extend %estiloImagenTitulos;
+
+        h1 {
+            @extend %estiloTitulos;
+        }
+    }
+
     .venta-arr-main {
+        display: flex;
+        flex-direction: row;
         .casas-container {
             .card {
                 @extend %estiloCard;
+            }
+        }
+        .form-container-todos {
+            @extend %estiloFormulario;
+            width: 50%;
+            .button-search {
+                @extend %estiloBoton;
             }
         }
     }

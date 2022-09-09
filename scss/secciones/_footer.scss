@@ -110,12 +110,12 @@
 
 @media (max-width: 724px) {
     .footer {
-        .copyright {
-            display: none;
-        }
-
-        .contacto {
-            display: none;
+        display: block;
+        .redes-cont {
+            align-items: flex-start;
+            img {
+                margin-left: 15px;
+            }
         }
     }
     

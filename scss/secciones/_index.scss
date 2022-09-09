@@ -102,9 +102,21 @@ main {
         }
     }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .propiedades-destacadas {
         flex-wrap: wrap;
-        justify-content: center
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+        
+    }
+}
+@media (max-width: 500px) {
+    .propiedades-destacadas {
+        flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+        
     }
 }

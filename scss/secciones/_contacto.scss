@@ -31,9 +31,11 @@
         .form-consulta {
             display: flex;
             flex-direction: column;
+            width: 70%;
             textarea {
                 margin-top: 5px;
                 margin-bottom: 5px;
+                height: 200px;
                 &:hover {
                     background-color: bisque;
                 .form-control {
@@ -53,6 +55,21 @@
                     background-color: bisque;
                 }
             }
+            .button-search {
+                @extend %estiloBoton;
+                margin-top: 10px;
+            }
           }
       }
   }
+
+  @media (max-width: 750px){
+    .contacto-main {
+        .contacto-info {
+            display: block;
+            .iframe-container{
+                width: 80%;
+            }
+        }
+    }
+}

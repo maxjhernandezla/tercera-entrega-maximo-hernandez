@@ -12,7 +12,7 @@ main .propiedades-destacadas .card, main .venta-arr-main .casas-container .card,
     -webkit-box-shadow: -1px 2px 32px -6px rgba(0, 0, 0, 0.77);
     -moz-box-shadow: -1px 2px 32px -6px rgba(0, 0, 0, 0.77); }
 
-.contacto-main .contacto-title, .quienes-main .quienes-title {
+main .venta-arr-title, .contacto-main .contacto-title, .quienes-main .quienes-title {
   padding: 15px;
   text-align: start;
   background-image: url("https://res.cloudinary.com/maxjhernandez/image/upload/v1662510756/Las%20Mar%C3%ADas/nagesh-badu-vYcH7pI6v1Q-unsplash_g76lda.jpg");
@@ -29,7 +29,7 @@ main .propiedades-destacadas .card, main .venta-arr-main .casas-container .card,
   display: flex;
   align-items: center; }
 
-.contacto-main .contacto-title h1, .quienes-main .quienes-title h1 {
+main .venta-arr-title h1, .contacto-main .contacto-title h1, .quienes-main .quienes-title h1 {
   display: flex;
   background-color: #766b6ba5;
   padding: 15px 25px 15px 25px;
@@ -42,7 +42,7 @@ main .propiedades-destacadas .card, main .venta-arr-main .casas-container .card,
   color: #ffe4c4;
   width: fit-content; }
 
-.quienes-main .quienes-container .form-container-todos {
+main .venta-arr-main .form-container-todos, .quienes-main .quienes-container .form-container-todos {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -52,13 +52,13 @@ main .propiedades-destacadas .card, main .venta-arr-main .casas-container .card,
   align-content: center;
   justify-content: center; }
 
-main .form-container .d-grid .btn-primary, .quienes-main .quienes-container .form-container-todos .button-search {
+main .form-container .d-grid .btn-primary, main .venta-arr-main .form-container-todos .button-search, .contacto-main .envie-consulta .form-consulta .button-search, .quienes-main .quienes-container .form-container-todos .button-search {
   background-color: #193724;
   border-color: rgba(0, 0, 0, 0.689);
   font-weight: bold; }
-  main .form-container .d-grid .btn-primary:hover, .quienes-main .quienes-container .form-container-todos .button-search:hover {
+  main .form-container .d-grid .btn-primary:hover, main .venta-arr-main .form-container-todos .button-search:hover, .contacto-main .envie-consulta .form-consulta .button-search:hover, .quienes-main .quienes-container .form-container-todos .button-search:hover {
     background-color: #193724b8; }
-  main .form-container .d-grid .btn-primary:focus, .quienes-main .quienes-container .form-container-todos .button-search:focus {
+  main .form-container .d-grid .btn-primary:focus, main .venta-arr-main .form-container-todos .button-search:focus, .contacto-main .envie-consulta .form-consulta .button-search:focus, .quienes-main .quienes-container .form-container-todos .button-search:focus {
     background-color: #dfdfcecc;
     color: black;
     border: 2px black solid;
@@ -171,10 +171,19 @@ main .propiedades-destacadas {
   main .propiedades-destacadas .card-body p {
     margin: 0; }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .propiedades-destacadas {
     flex-wrap: wrap;
-    justify-content: center; } }
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%; } }
+
+@media (max-width: 500px) {
+  .propiedades-destacadas {
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%; } }
 
 .footer {
   display: grid;
@@ -252,10 +261,23 @@ main .propiedades-destacadas {
     font-size: 20px; }
 
 @media (max-width: 724px) {
-  .footer .copyright {
-    display: none; }
-  .footer .contacto {
-    display: none; } }
+  .footer {
+    display: block; }
+    .footer .redes-cont {
+      align-items: flex-start; }
+      .footer .redes-cont img {
+        margin-left: 15px; } }
+
+main .venta-arr-title {
+  height: 250px;
+  display: flex;
+  justify-content: space-between; }
+
+main .venta-arr-main {
+  display: flex;
+  flex-direction: row; }
+  main .venta-arr-main .form-container-todos {
+    width: 50%; }
 
 .contacto-main {
   background-color: #dfdfcecc; }
@@ -280,10 +302,12 @@ main .propiedades-destacadas {
     align-items: center; }
     .contacto-main .envie-consulta .form-consulta {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      width: 70%; }
       .contacto-main .envie-consulta .form-consulta textarea {
         margin-top: 5px;
-        margin-bottom: 5px; }
+        margin-bottom: 5px;
+        height: 200px; }
         .contacto-main .envie-consulta .form-consulta textarea:hover {
           background-color: bisque; }
           .contacto-main .envie-consulta .form-consulta textarea:hover .form-control {
@@ -297,6 +321,14 @@ main .propiedades-destacadas {
         margin-bottom: 5px; }
         .contacto-main .envie-consulta .form-consulta input:hover {
           background-color: bisque; }
+      .contacto-main .envie-consulta .form-consulta .button-search {
+        margin-top: 10px; }
+
+@media (max-width: 750px) {
+  .contacto-main .contacto-info {
+    display: block; }
+    .contacto-main .contacto-info .iframe-container {
+      width: 80%; } }
 
 .quienes-main {
   background-color: #dfdfcecc; }
