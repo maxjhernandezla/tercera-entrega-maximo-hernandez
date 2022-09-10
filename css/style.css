@@ -46,11 +46,13 @@ main .venta-arr-main .form-container-todos, .quienes-main .quienes-container .fo
   width: 30%;
   display: flex;
   flex-direction: column;
-  background-color: gray;
+  background-color: #dfdfcecc;
   padding: 10px;
   gap: 10px;
   align-content: center;
   justify-content: center; }
+  main .venta-arr-main .form-container-todos h3, .quienes-main .quienes-container .form-container-todos h3 {
+    color: 0; }
 
 main .form-container .d-grid .btn-primary, main .venta-arr-main .form-container-todos .button-search, .contacto-main .envie-consulta .form-consulta .button-search, .quienes-main .quienes-container .form-container-todos .button-search {
   background-color: #193724;
@@ -209,7 +211,8 @@ main .propiedades-destacadas {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      height: fit-content; }
+      height: fit-content;
+      margin-bottom: 0; }
       .footer .contacto ul li {
         display: flex;
         align-items: center;
@@ -276,8 +279,37 @@ main .venta-arr-title {
 main .venta-arr-main {
   display: flex;
   flex-direction: row; }
+  main .venta-arr-main .casas-container {
+    width: 70%; }
+    main .venta-arr-main .casas-container .card {
+      margin: 1rem; }
   main .venta-arr-main .form-container-todos {
-    width: 50%; }
+    width: 30%; }
+    main .venta-arr-main .form-container-todos h3 {
+      color: white;
+      background-color: #766b6ba5;
+      width: fit-content;
+      padding: 10px; }
+
+@media (max-width: 750px) {
+  main .venta-arr-main {
+    display: block; }
+    main .venta-arr-main .casas-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: auto;
+      align-items: center; }
+      main .venta-arr-main .casas-container .card {
+        width: 70%; }
+    main .venta-arr-main .form-container-todos {
+      width: 100%; }
+      main .venta-arr-main .form-container-todos select {
+        width: 98%; } }
+
+@media (max-width: 500px) {
+  main .search-by {
+    display: none; } }
 
 .contacto-main {
   background-color: #dfdfcecc; }
@@ -351,6 +383,11 @@ main .venta-arr-main {
         margin: 25px; }
       .quienes-main .quienes-container .quienes-somos-section p {
         margin: 15px; }
+    .quienes-main .quienes-container .form-container-todos h3 {
+      color: white;
+      background-color: #766b6ba5;
+      width: fit-content;
+      padding: 10px; }
 
 @media (max-width: 750px) {
   .quienes-main .quienes-container {
@@ -373,5 +410,16 @@ main .venta-arr-main {
     width: auto; }
     .quienes-main .quienes-container .quienes-somos-section img {
       width: 310px;
+      align-self: center;
+      padding: 0px; } }
+
+@media (max-width: 350px) {
+  .quienes-main .quienes-container .quienes-somos-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto; }
+    .quienes-main .quienes-container .quienes-somos-section img {
+      width: 280px;
       align-self: center;
       padding: 0px; } }

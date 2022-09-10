@@ -14,16 +14,56 @@ main {
         display: flex;
         flex-direction: row;
         .casas-container {
+            width: 70%;
             .card {
                 @extend %estiloCard;
+                margin: 1rem;
             }
         }
         .form-container-todos {
             @extend %estiloFormulario;
-            width: 50%;
+            width: 30%;
+            h3 {
+                color: white;
+                background-color: $colorFondoTitulos;
+                width: fit-content;
+                padding: 10px
+            }
             .button-search {
                 @extend %estiloBoton;
             }
         }
+    }
+}
+
+@media (max-width: 750px){
+    main {
+        .venta-arr-main {
+            display: block;
+            .casas-container {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: auto;
+                align-items: center;
+                .card {
+                    width: 70%;
+                }
+            }
+            .form-container-todos {
+                width: 100%;
+                select {
+                    width: 98%;
+                  }
+              }
+        }
+    }
+}
+@media (max-width: 500px){
+    main {
+        .search-by {
+            display: none;
+        }
+       
     }
 }

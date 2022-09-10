@@ -30,6 +30,12 @@
           }
         .form-container-todos {
             @extend %estiloFormulario;
+            h3 {
+                color: white;
+                background-color: $colorFondoTitulos;
+                width: fit-content;
+                padding: 10px;
+            }
             .button-search {
                 @extend %estiloBoton;
             }
@@ -73,3 +79,21 @@
         }
     }   
 }
+
+@media (max-width: 350px) {
+    .quienes-main{    
+        .quienes-container {
+            .quienes-somos-section {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: auto;
+                img {
+                    width: 280px;
+                    align-self: center;
+                    padding: 0px;
+                }
+            }
+            }
+        }   
+    }
