@@ -27,7 +27,7 @@ main {
                 color: white;
                 background-color: $colorFondoTitulos;
                 width: fit-content;
-                padding: 10px
+                padding: 10px;
             }
             .button-search {
                 @extend %estiloBoton;

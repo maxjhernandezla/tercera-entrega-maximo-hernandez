@@ -50,9 +50,8 @@ main .venta-arr-main .form-container-todos, .quienes-main .quienes-container .fo
   padding: 10px;
   gap: 10px;
   align-content: center;
-  justify-content: center; }
-  main .venta-arr-main .form-container-todos h3, .quienes-main .quienes-container .form-container-todos h3 {
-    color: 0; }
+  justify-content: center;
+  border-left: 1px #495057 solid; }
 
 main .form-container .d-grid .btn-primary, main .venta-arr-main .form-container-todos .button-search, .contacto-main .envie-consulta .form-consulta .button-search, .quienes-main .quienes-container .form-container-todos .button-search {
   background-color: #193724;
