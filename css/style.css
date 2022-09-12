@@ -308,7 +308,9 @@ main .venta-arr-main {
 
 @media (max-width: 500px) {
   main .search-by {
-    display: none; } }
+    display: none; }
+  main .venta-arr-main .casas-container .card {
+    width: 80%; } }
 
 .contacto-main {
   background-color: #dfdfcecc; }
