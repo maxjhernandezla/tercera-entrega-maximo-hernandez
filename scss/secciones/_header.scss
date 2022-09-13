@@ -58,3 +58,15 @@ header {
         }
     }
 }
+@media screen and (max-width: 991px) {
+    header {
+        .navbar-collapse {
+            z-index: 1;
+            position: absolute;
+            top: 98%;
+            left: 0;
+            width: 100%;
+            background-color: #193724;
+        }
+    }
+}

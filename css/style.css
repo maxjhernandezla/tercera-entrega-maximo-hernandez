@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box; }
 
+a {
+  text-decoration: none; }
+
 main .propiedades-destacadas .card, main .venta-arr-main .casas-container .card, .quienes-main .quienes-container .quienes-somos-section img {
   background-color: #ffe4c4;
   box-shadow: -1px 2px 27px -6px rgba(0, 0, 0, 0.77);
@@ -51,7 +54,7 @@ main .venta-arr-main .form-container-todos, .quienes-main .quienes-container .fo
   gap: 10px;
   align-content: center;
   justify-content: center;
-  border-left: 1px #495057 solid; }
+  border-left: 1px rgba(128, 128, 128, 0.515) solid; }
 
 main .form-container .d-grid .btn-primary, main .venta-arr-main .form-container-todos .button-search, .contacto-main .envie-consulta .form-consulta .button-search, .quienes-main .quienes-container .form-container-todos .button-search {
   background-color: #193724;
@@ -103,6 +106,15 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link
   header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
     font-weight: bolder; }
 
+@media screen and (max-width: 991px) {
+  header .navbar-collapse {
+    z-index: 1;
+    position: absolute;
+    top: 98%;
+    left: 0;
+    width: 100%;
+    background-color: #193724; } }
+
 main h1 {
   display: none; }
 
@@ -152,7 +164,7 @@ main .propiedades-destacadas {
         background-color: rgba(0, 0, 0, 0.363);
         color: #dfdfcecc;
         margin: 0;
-        top: 81%;
+        bottom: 0;
         padding: 0.5rem;
         font-size: 1.5rem; }
   main .propiedades-destacadas .card-icon {
@@ -212,15 +224,18 @@ main .propiedades-destacadas {
       justify-content: space-around;
       height: fit-content;
       margin-bottom: 0; }
-      .footer .contacto ul li {
+      .footer .contacto ul a {
         display: flex;
         align-items: center;
         margin: 10px 0px 10px 0px; }
-        .footer .contacto ul li img {
+        .footer .contacto ul a img {
           height: 20px;
           margin-right: 5px; }
-        .footer .contacto ul li p {
-          margin: 0; }
+        .footer .contacto ul a p {
+          margin: 0;
+          color: #dfdfcecc; }
+          .footer .contacto ul a p:hover {
+            color: #ffe4c4; }
   .footer .redes-cont {
     grid-area: redes-cont;
     display: flex;
