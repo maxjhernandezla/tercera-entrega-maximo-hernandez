@@ -18,6 +18,9 @@ main {
             .card {
                 @extend %estiloCard;
                 margin: 1rem;
+                .row {
+                    overflow: hidden;
+                }
             }
         }
         .form-container-todos {
@@ -36,24 +39,25 @@ main {
     }
 }
 
-@media (max-width: 750px){
+@media (max-width: 900px){
     main {
         .venta-arr-main {
-            display: block;
+            display: flex;
+            flex-direction: column-reverse;
+
             .casas-container {
                 display: flex;
                 flex-direction: column;
-                flex-wrap: wrap;
                 width: auto;
                 align-items: center;
-                .card {
-                    width: 70%;
-                }
+                
             }
             .form-container-todos {
                 width: 100%;
+                align-items: center;
                 select {
-                    width: 98%;
+                    width: 70%;
+                    
                   }
               }
         }

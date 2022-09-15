@@ -80,6 +80,9 @@ header .navbar-collapse {
 header .nav-color {
   background-color: #193724; }
 
+header .navbar .container-fluid .navbar-toggler {
+  border: 1px #000000b4 solid; }
+
 header .navbar .container-fluid .navbar-brand .logo-img {
   width: 150px;
   padding: 0; }
@@ -87,12 +90,6 @@ header .navbar .container-fluid .navbar-brand .logo-img {
     border: 1px rgba(0, 0, 0, 0.578) solid;
     border-radius: 5%;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.584); }
-
-header .navbar .container-fluid .navbar-brand .navbar-toggler {
-  z-index: 2; }
-
-header .navbar .container-fluid .navbar-brand .navbar-brand {
-  z-index: 2; }
 
 header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item:hover {
   color: black;
@@ -107,13 +104,21 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link
     font-weight: bolder; }
 
 @media screen and (max-width: 991px) {
-  header .navbar-collapse {
+  header .navbar .navbar-collapse {
     z-index: 1;
     position: absolute;
     top: 98%;
     left: 0;
     width: 100%;
-    background-color: #193724; } }
+    background-color: #193724; }
+    header .navbar .navbar-collapse .navbar-nav .nav-item:hover {
+      color: black;
+      border: 1px rgba(0, 0, 0, 0.578) solid;
+      border-radius: 5%;
+      box-shadow: 2px 2px rgba(0, 0, 0, 0.584); }
+    header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+      color: #dfdfcecc;
+      padding: 10px; } }
 
 main h1 {
   display: none; }
@@ -132,9 +137,6 @@ main .form-container {
     margin: 5px; }
     main .form-container .form-select:hover {
       background-color: #ffe4c4; }
-  main .form-container .form-price {
-    width: 91.6%;
-    margin: 10px; }
   main .form-container .d-grid .button-search {
     margin-top: 13px; }
     main .form-container .d-grid .button-search:hover {
@@ -149,9 +151,20 @@ main h2 {
   background-color: aliceblue; }
 
 main .propiedades-destacadas {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  grid-template-areas: "casa-uno casa-dos casa-tres casa-cuatro";
   background-color: aliceblue; }
+  main .propiedades-destacadas .casa-uno {
+    grid-area: casa-uno; }
+  main .propiedades-destacadas .casa-dos {
+    grid-area: casa-dos; }
+  main .propiedades-destacadas .casa-tres {
+    grid-area: casa-tres; }
+  main .propiedades-destacadas .casa-4 {
+    grid-area: casa-4; }
   main .propiedades-destacadas .card {
     margin: 15px;
     margin-bottom: 30px; }
@@ -166,7 +179,7 @@ main .propiedades-destacadas {
         margin: 0;
         bottom: 0;
         padding: 0.5rem;
-        font-size: 1.5rem; }
+        font-size: 1rem; }
   main .propiedades-destacadas .card-icon {
     display: flex;
     flex-direction: row; }
@@ -184,19 +197,28 @@ main .propiedades-destacadas {
   main .propiedades-destacadas .card-body p {
     margin: 0; }
 
-@media (max-width: 900px) {
-  .propiedades-destacadas {
-    flex-wrap: wrap;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%; } }
+@media (max-width: 1100px) {
+  main .propiedades-destacadas {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-template-areas: "casa-uno casa-dos" "casa-tres casa-cuatro";
+    justify-items: center; }
+    main .propiedades-destacadas .card {
+      width: 70%; } }
+
+@media (max-width: 600px) {
+  main .propiedades-destacadas {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: "casa-uno" "casa-dos" "casa-tres" "casa-cuatro"; }
+    main .propiedades-destacadas .card {
+      width: 60%; } }
 
 @media (max-width: 500px) {
-  .propiedades-destacadas {
-    flex-wrap: wrap;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%; } }
+  main .propiedades-destacadas .card {
+    width: 80%; } }
 
 .footer {
   display: grid;
@@ -230,7 +252,8 @@ main .propiedades-destacadas {
         margin: 10px 0px 10px 0px; }
         .footer .contacto ul a img {
           height: 20px;
-          margin-right: 5px; }
+          margin-right: 5px;
+          text-decoration: white; }
         .footer .contacto ul a p {
           margin: 0;
           color: #dfdfcecc; }
@@ -297,6 +320,8 @@ main .venta-arr-main {
     width: 70%; }
     main .venta-arr-main .casas-container .card {
       margin: 1rem; }
+      main .venta-arr-main .casas-container .card .row {
+        overflow: hidden; }
   main .venta-arr-main .form-container-todos {
     width: 30%; }
     main .venta-arr-main .form-container-todos h3 {
@@ -305,21 +330,20 @@ main .venta-arr-main {
       width: fit-content;
       padding: 10px; }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
   main .venta-arr-main {
-    display: block; }
+    display: flex;
+    flex-direction: column-reverse; }
     main .venta-arr-main .casas-container {
       display: flex;
       flex-direction: column;
-      flex-wrap: wrap;
       width: auto;
       align-items: center; }
-      main .venta-arr-main .casas-container .card {
-        width: 70%; }
     main .venta-arr-main .form-container-todos {
-      width: 100%; }
+      width: 100%;
+      align-items: center; }
       main .venta-arr-main .form-container-todos select {
-        width: 98%; } }
+        width: 70%; } }
 
 @media (max-width: 500px) {
   main .search-by {

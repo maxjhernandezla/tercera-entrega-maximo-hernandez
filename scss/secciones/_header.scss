@@ -15,8 +15,11 @@ header {
 
     .navbar {
         .container-fluid {
-            
+            .navbar-toggler {
+                border: 1px #000000b4 solid;
+            }
             .navbar-brand {
+                
                 .logo-img {
                     width: 150px;
                     padding: 0;
@@ -26,14 +29,7 @@ header {
                         border-radius: 5%;
                         box-shadow: 2px 2px rgba(0, 0, 0, 0.584);
                     }
-                }
-                .navbar-toggler {
-                    z-index: 2;
-                    }
-                  
-                  .navbar-brand {
-                    z-index: 2;
-                }    
+                }  
             }
             .navbar-collapse {
                         .navbar-nav {
@@ -60,13 +56,30 @@ header {
 }
 @media screen and (max-width: 991px) {
     header {
-        .navbar-collapse {
-            z-index: 1;
-            position: absolute;
-            top: 98%;
-            left: 0;
-            width: 100%;
-            background-color: #193724;
+        .navbar {
+            .navbar-collapse {
+                z-index: 1;
+                position: absolute;
+                top: 98%;
+                left: 0;
+                width: 100%;
+                background-color: #193724;
+                .navbar-nav {
+                    .nav-item {
+                        &:hover{
+                        color: black;
+                        border: 1px rgba(0, 0, 0, 0.578) solid;
+                        border-radius: 5%;
+                        box-shadow: 2px 2px rgba(0, 0, 0, 0.584);       
+                        }
+                        .nav-link {
+                            color: #dfdfcecc;
+                            padding: 10px;
+
+                        }
+                    }
+                }
+            }
         }
     }
-}
+}        
