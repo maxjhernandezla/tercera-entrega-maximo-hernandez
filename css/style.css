@@ -45,7 +45,7 @@ main .venta-arr-title h1, .quienes-main .quienes-title h1 {
   color: #ffe4c4;
   width: fit-content; }
 
-main .venta-arr-main .form-container-todos, .quienes-main .quienes-container .form-container-todos {
+.form-container-todos, .quienes-main .quienes-container .form-container-todos {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -56,13 +56,13 @@ main .venta-arr-main .form-container-todos, .quienes-main .quienes-container .fo
   justify-content: center;
   border-left: 1px rgba(128, 128, 128, 0.515) solid; }
 
-main .form-container .d-grid .btn-primary, main .venta-arr-main .form-container-todos .button-search, .contacto-main .envie-consulta .form-consulta .button-search, .quienes-main .quienes-container .form-container-todos .button-search {
+main .form-container .d-grid .btn-primary, .form-container-todos .button-search, .contacto-main .envie-consulta .form-consulta .button-search, .quienes-main .quienes-container .form-container-todos .button-search {
   background-color: #193724;
   border-color: rgba(0, 0, 0, 0.689);
   font-weight: bold; }
-  main .form-container .d-grid .btn-primary:hover, main .venta-arr-main .form-container-todos .button-search:hover, .contacto-main .envie-consulta .form-consulta .button-search:hover, .quienes-main .quienes-container .form-container-todos .button-search:hover {
+  main .form-container .d-grid .btn-primary:hover, .form-container-todos .button-search:hover, .contacto-main .envie-consulta .form-consulta .button-search:hover, .quienes-main .quienes-container .form-container-todos .button-search:hover {
     background-color: #193724b8; }
-  main .form-container .d-grid .btn-primary:focus, main .venta-arr-main .form-container-todos .button-search:focus, .contacto-main .envie-consulta .form-consulta .button-search:focus, .quienes-main .quienes-container .form-container-todos .button-search:focus {
+  main .form-container .d-grid .btn-primary:focus, .form-container-todos .button-search:focus, .contacto-main .envie-consulta .form-consulta .button-search:focus, .quienes-main .quienes-container .form-container-todos .button-search:focus {
     background-color: #dfdfcecc;
     color: black;
     border: 2px black solid;
@@ -252,8 +252,7 @@ main .propiedades-destacadas {
         margin: 10px 0px 10px 0px; }
         .footer .contacto ul a img {
           height: 20px;
-          margin-right: 5px;
-          text-decoration: white; }
+          margin-right: 5px; }
         .footer .contacto ul a p {
           margin: 0;
           color: #dfdfcecc; }
@@ -321,14 +320,16 @@ main .venta-arr-main {
     main .venta-arr-main .casas-container .card {
       margin: 1rem; }
       main .venta-arr-main .casas-container .card .row {
-        overflow: hidden; }
-  main .venta-arr-main .form-container-todos {
-    width: 30%; }
-    main .venta-arr-main .form-container-todos h3 {
-      color: white;
-      background-color: #766b6ba5;
-      width: fit-content;
-      padding: 10px; }
+        max-height: 208px;
+        overflow: scroll; }
+
+.form-container-todos {
+  width: 30%; }
+  .form-container-todos h3 {
+    color: white;
+    background-color: #766b6ba5;
+    width: fit-content;
+    padding: 10px; }
 
 @media (max-width: 900px) {
   main .venta-arr-main {

@@ -19,7 +19,10 @@ main {
                 @extend %estiloCard;
                 margin: 1rem;
                 .row {
-                    overflow: hidden;
+                    max-height: 208px;
+                    overflow: scroll;
+                }
+                    }
                 }
             }
         }
@@ -36,8 +39,6 @@ main {
                 @extend %estiloBoton;
             }
         }
-    }
-}
 
 @media (max-width: 900px){
     main {
