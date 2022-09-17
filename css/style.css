@@ -15,7 +15,7 @@ main .propiedades-destacadas .card, main .venta-arr-main .casas-container .card,
     -webkit-box-shadow: -1px 2px 32px -6px rgba(0, 0, 0, 0.77);
     -moz-box-shadow: -1px 2px 32px -6px rgba(0, 0, 0, 0.77); }
 
-main .venta-arr-title, .quienes-main .quienes-title {
+main .venta-arr-title, .contacto-main .contacto-title, .quienes-main .quienes-title {
   padding: 15px;
   text-align: start;
   background-image: url("https://res.cloudinary.com/maxjhernandez/image/upload/v1662510756/Las%20Mar%C3%ADas/nagesh-badu-vYcH7pI6v1Q-unsplash_g76lda.jpg");
@@ -32,7 +32,7 @@ main .venta-arr-title, .quienes-main .quienes-title {
   display: flex;
   align-items: center; }
 
-main .venta-arr-title h1, .quienes-main .quienes-title h1 {
+main .venta-arr-title h1, .contacto-main .contacto-title h1, .quienes-main .quienes-title h1 {
   display: flex;
   background-color: #766b6ba5;
   padding: 15px 25px 15px 25px;
@@ -68,6 +68,9 @@ main .form-container .d-grid .btn-primary, .form-container-todos .button-search,
     border: 2px black solid;
     font-weight: bolder;
     font-size: large; }
+
+.form-container-todos .form-select:hover, .quienes-main .quienes-container .form-container-todos .form-select:hover {
+  background-color: bisque; }
 
 header .navbar-expand-lg {
   justify-content: flex-end;
@@ -353,6 +356,7 @@ main .venta-arr-main {
       max-height: fit-content;
       overflow: visible; }
       main .venta-arr-main .casas-container .card .row .col-md-6 {
+        min-height: 50px;
         max-height: 100px;
         overflow: scroll; } }
 
@@ -364,6 +368,10 @@ main .venta-arr-main {
 
 .contacto-main {
   background-color: #dfdfcecc; }
+  .contacto-main .contacto-title {
+    height: 250px; }
+    .contacto-main .contacto-title h1 {
+      background-color: #766b6ba5; }
   .contacto-main .envie-consulta {
     border-top: 1px #193724 solid;
     padding: 15px;
@@ -376,10 +384,7 @@ main .venta-arr-main {
       width: 70%; }
       .contacto-main .envie-consulta .form-consulta .preguntas {
         display: flex;
-        flex-direction: row; }
-        .contacto-main .envie-consulta .form-consulta .preguntas .input-group {
-          width: 50%;
-          height: 20px; }
+        flex-direction: column; }
       .contacto-main .envie-consulta .form-consulta textarea {
         margin-top: 5px;
         margin-bottom: 5px;
@@ -396,6 +401,11 @@ main .venta-arr-main {
         margin-top: 5px;
         margin-bottom: 5px; }
         .contacto-main .envie-consulta .form-consulta input:hover {
+          background-color: bisque; }
+      .contacto-main .envie-consulta .form-consulta select {
+        margin-top: 5px;
+        margin-bottom: 5px; }
+        .contacto-main .envie-consulta .form-consulta select:hover {
           background-color: bisque; }
       .contacto-main .envie-consulta .form-consulta .button-search {
         margin-top: 10px; }

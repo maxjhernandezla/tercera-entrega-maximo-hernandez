@@ -1,5 +1,13 @@
 .contacto-main {
     background-color: $colorFondo;
+    .contacto-title {
+        height: 250px;
+        @extend %estiloImagenTitulos;
+        h1 {
+            @extend %estiloTitulos;
+            background-color: #766b6ba5;
+        }
+    }
     .envie-consulta {
         border-top: 1px #193724 solid;
         padding: 15px;
@@ -13,11 +21,7 @@
             width: 70%;
             .preguntas {
                 display: flex;
-                flex-direction: row;
-                .input-group {
-                width: 50%;
-                height: 20px;
-                }
+                flex-direction: column;
                 }
             textarea {
                 margin-top: 5px;
@@ -36,6 +40,14 @@
             }
             input {
                 padding: 5px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                &:hover {
+                    background-color: bisque;
+                }
+               
+            }
+            select {
                 margin-top: 5px;
                 margin-bottom: 5px;
                 &:hover {

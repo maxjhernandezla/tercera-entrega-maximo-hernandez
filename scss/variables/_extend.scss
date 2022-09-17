@@ -57,6 +57,7 @@
     align-content: center;
     justify-content: center;
     border-left: 1px rgba(128, 128, 128, 0.515) solid;
+    
 }
 
 %estiloBoton {
@@ -75,4 +76,10 @@
                         font-weight: bolder;
                         font-size: large;
                     }
+}
+
+%estiloSelect {
+    &:hover {
+        background-color: bisque;
+    }
 }

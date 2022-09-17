@@ -38,6 +38,9 @@ main {
             .button-search {
                 @extend %estiloBoton;
             }
+            .form-select {
+                @extend %estiloSelect;
+            }
         }
 
 @media (max-width: 900px){
@@ -76,6 +79,7 @@ main {
                         overflow: visible;
                         
                         .col-md-6 {
+                            min-height: 50px;
                             max-height: 100px;
                             overflow: scroll;
                         }    

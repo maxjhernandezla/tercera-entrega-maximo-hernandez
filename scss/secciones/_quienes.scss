@@ -39,6 +39,9 @@
             .button-search {
                 @extend %estiloBoton;
             }
+            .form-select {
+                @extend %estiloSelect;
+            }
         }  
     }
 }
