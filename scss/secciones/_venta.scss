@@ -64,6 +64,28 @@ main {
         }
     }
 }
+
+@media (max-width: 767px){ 
+    main {
+        .venta-arr-main {
+            .casas-container {
+                .card {
+                    width: 70%;
+                    .row {
+                        max-height: fit-content;
+                        overflow: visible;
+                        
+                        .col-md-6 {
+                            max-height: 100px;
+                            overflow: scroll;
+                        }    
+                    }
+                }
+            }
+        }
+    }
+
+}
 @media (max-width: 500px){
     main {
         .search-by {
@@ -72,7 +94,7 @@ main {
         .venta-arr-main {
             .casas-container {
                 .card {
-                    width: 80%;
+                    width: 70%;
                 }
             }
         }

@@ -346,11 +346,21 @@ main .venta-arr-main {
       main .venta-arr-main .form-container-todos select {
         width: 70%; } }
 
+@media (max-width: 767px) {
+  main .venta-arr-main .casas-container .card {
+    width: 70%; }
+    main .venta-arr-main .casas-container .card .row {
+      max-height: fit-content;
+      overflow: visible; }
+      main .venta-arr-main .casas-container .card .row .col-md-6 {
+        max-height: 100px;
+        overflow: scroll; } }
+
 @media (max-width: 500px) {
   main .search-by {
     display: none; }
   main .venta-arr-main .casas-container .card {
-    width: 80%; } }
+    width: 70%; } }
 
 .contacto-main {
   background-color: #dfdfcecc; }
