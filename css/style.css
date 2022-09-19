@@ -341,7 +341,9 @@ main .venta-arr-main {
       margin: 1rem; }
       main .venta-arr-main .casas-container .card .row {
         max-height: 208px;
-        overflow: scroll; }
+        overflow: auto; }
+        main .venta-arr-main .casas-container .card .row::-webkit-scrollbar {
+          scrollbar-color: red; }
         main .venta-arr-main .casas-container .card .row .col-md-4 .carousel-inner {
           position: relative; }
           main .venta-arr-main .casas-container .card .row .col-md-4 .carousel-inner p {

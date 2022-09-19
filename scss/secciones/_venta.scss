@@ -20,7 +20,10 @@ main {
                 margin: 1rem;
                 .row {
                     max-height: 208px;
-                    overflow: scroll;
+                    overflow: auto;
+                    &::-webkit-scrollbar {
+                        scrollbar-color: red;
+                    }
                     .col-md-4 {
                         .carousel-inner {
                             position: relative;
