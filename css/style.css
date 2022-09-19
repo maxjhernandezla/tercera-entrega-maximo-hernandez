@@ -184,21 +184,38 @@ main .propiedades-destacadas {
         padding: 0.5rem;
         font-size: 1rem; }
   main .propiedades-destacadas .card-icon {
-    display: flex;
-    flex-direction: row; }
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "icon-uno icon-dos" "icon-tres icon-cuatro"; }
+    main .propiedades-destacadas .card-icon .bedroom {
+      grid-area: icon-uno; }
+    main .propiedades-destacadas .card-icon .bathroom {
+      grid-area: icon-dos; }
+    main .propiedades-destacadas .card-icon .m2 {
+      grid-area: icon-tres; }
+    main .propiedades-destacadas .card-icon .garage {
+      grid-area: icon-cuatro; }
     main .propiedades-destacadas .card-icon .card-utilities {
       display: flex;
       align-items: center;
       flex-direction: row;
-      justify-content: center; }
-  main .propiedades-destacadas .card-body a {
-    text-decoration: none;
-    color: #495057; }
-  main .propiedades-destacadas .card-body .icon {
-    width: 25px;
-    margin: 10px; }
-  main .propiedades-destacadas .card-body p {
-    margin: 0; }
+      justify-content: center;
+      padding: 0; }
+  main .propiedades-destacadas .card-body {
+    height: 60px; }
+    main .propiedades-destacadas .card-body a {
+      text-decoration: none;
+      color: #495057; }
+    main .propiedades-destacadas .card-body .icon {
+      width: 25px;
+      margin: 10px; }
+    main .propiedades-destacadas .card-body p {
+      margin: 0;
+      color: black; }
+    main .propiedades-destacadas .card-body h5 {
+      color: black; }
 
 @media (max-width: 1100px) {
   main .propiedades-destacadas {
@@ -325,6 +342,18 @@ main .venta-arr-main {
       main .venta-arr-main .casas-container .card .row {
         max-height: 208px;
         overflow: scroll; }
+        main .venta-arr-main .casas-container .card .row .col-md-4 .carousel-inner {
+          position: relative; }
+          main .venta-arr-main .casas-container .card .row .col-md-4 .carousel-inner p {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.363);
+            color: #dfdfcecc;
+            margin: 0;
+            bottom: 0;
+            right: 0;
+            padding: 0.5rem;
+            font-size: 1rem;
+            z-index: 2; }
 
 .form-container-todos {
   width: 30%; }
@@ -437,6 +466,9 @@ main .venta-arr-main {
         margin: 25px; }
       .quienes-main .quienes-container .quienes-somos-section p {
         margin: 15px; }
+      .quienes-main .quienes-container .quienes-somos-section .firma {
+        font-size: medium;
+        text-align: end; }
     .quienes-main .quienes-container .form-container-todos h3 {
       color: white;
       background-color: #766b6ba5;

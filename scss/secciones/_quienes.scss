@@ -27,6 +27,10 @@
             p {
                 margin: 15px;
             }
+            .firma {
+                font-size: medium;
+                text-align: end
+            }
           }
         .form-container-todos {
             @extend %estiloFormulario;
